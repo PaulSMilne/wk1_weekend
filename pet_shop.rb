@@ -13,3 +13,15 @@ end
 def pets_sold(array)
     array[:admin][:pets_sold]
 end
+
+def increase_pets_sold(array, amount)
+    array[:admin][:pets_sold] = pets_sold(array) + amount
+end
+
+def stock_count(array)
+    counter=0
+    for pet in array[:pets]
+        counter += 1
+    end
+    counter
+end
